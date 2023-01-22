@@ -1,0 +1,39 @@
+@import 'colors'
+@import 'utilities'
+
+
+.nav
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  padding-top: 50px 
+  padding-bottom: 40px
+
+  .left
+    display: flex
+    align-items: center
+    gap: 30px
+
+    img
+      padding-right: 15px
+      width: auto
+      height: 35px
+
+  .right
+    display: flex
+    gap: 40px
+
+    .signup
+      @include btncyan
+      font-size: 16px
+      padding: 8px 22px 
+
+li a
+  color: $grayishviolet
+  font-weight: 700
+  font-size: 16px
+  transition: .3s
+
+  &:hover
+    color: $verydarkviolet
